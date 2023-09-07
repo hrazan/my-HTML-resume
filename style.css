@@ -1,0 +1,104 @@
+
+body {
+    background-color: #f7e2e2;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.main {
+    display: grid;
+    grid: 25vw repeat(5, 1fr) / 25vw 3fr;
+    width: 100%;
+}
+
+.box {
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0 20px;
+}
+
+.head {
+    grid-area: 1/1/2/-1;
+    display: flex;
+}
+
+#photo {
+    flex-basis: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo_1{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 11vw;
+    background-color: grey;
+}
+
+#summary {
+    flex-basis: 75%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 20px;
+}
+
+.Education {
+    grid-area: 2/2/3/-1;
+}
+
+.Work {
+    grid-area: 3/2/4/-1;
+}
+
+.Certification {
+    grid-area: 4/2/5/-1;
+}
+
+.Other {
+    grid-area: 5/2/6/-1;
+}
+
+.Skill {
+    grid-area: 2/1/-2/2;
+    background-color: aqua;
+    border-radius: 12.5vw 12.5vw 10px 10px;
+}
+
+.footer {
+    grid-area: -2/1/-1/-1;
+}
+
+.head {
+    grid-area: 1/1/2/-1;
+}
+
+h1 {
+    color: black;
+}
+
+/*radar char*/
+.graph-container {
+    width: 25vw;
+    height: 25vw;
+    margin: 0;
+    padding: 0;
+    object-fit: fill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#graph {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 11vw;
+    background-color: black;
+}
