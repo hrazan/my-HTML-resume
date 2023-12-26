@@ -1,58 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Resume</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="head">
-        <div id="photo">
-          <div id="photo_1"></div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razan's Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="resume-head">
+      <div id="photo">
+        <div id="photo_1"></div>
+      </div>
+      <div class="summary-container">
+        <h1>Hafiyanda Razan (Natawidjaja)</h1>
         <div id="summary">
-          <h1>Hafiyanda Razan</h1>
-          <h2>Summary</h2>
-          <p></p>
+          <p>Emebedded/Control System Engineer. Recently started to learn Web Programming.<br />
+            <text class="italic">"Be Positive Be Happy"</text>
+          </p>
         </div>
+      </div>
+    </div>
+    <div class="resume-body">
+      <div class="box Personal">
+        <h2>Basic Information</h2>
+        <ul>
+          <li>Born: 27 March 1993, Jakarta, Indonesia</li>
+          <li>Living: Nagoya, Japan</li>
+          <li>E-mail: hafiyanda.razan@gmail.com</li>
+          <li>Instagram: hafiyandarazan</li>
+          <li>Facebook: Hafiyanda Razan N</li>
+        </ul>
       </div>
       <div class="box Education">
         <h2>Education</h2>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <a href="https://stei.itb.ac.id/en/home/">
+              Bandung Institute of Technology,
+              School of Electrical Engineering and Informatics,
+              Electrical Engineering
+            </a>
+            (2011~2015)
+          </li>
+          <li>
+            <a href="https://jls.ehle.ac.jp/en/">
+              Ehle Institute,
+              Graduate School Preparatory Course
+            </a>
+            (2015~2017)
+          </li>
+          <li>
+            <a href="https://www.cs.nitech.ac.jp/english/">
+              Nagoya Institute of technology,
+              Graduate School of Engineering,
+              Department of Computer Science,
+              Computaional Intelligence
+            </a>
+            (2017~2019: Research Student, 2019~2021: Graduate Program)
+          </li>
         </ul>
       </div>
       <div class="box Work">
         <h2>Work Experience</h2>
         <ul>
+          <li><a href="https://jp.arrk.com/en/">ARRK Corporation, System Control Engineer</a></li>
+        </ul>
+      </div>
+      <div class="box Skill">
+        <h2>Skills</h2>
+        <ul>
+          <li>Programming Language
+            <!--radar chart-->
+            <div class="graph-container">
+              <div id="graph"></div>
+            </div>
+            <ul>
+              <li>C++</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </li>
+          <li></li>
           <li></li>
         </ul>
       </div>
       <div class="box Certification">
         <h2>Certifications</h2>
         <ul>
-          <li></li>
+          <li>
+            <a href="https://www.jlpt.jp/e/about/levelsummary.html">
+              Japanese Language Proficiency Test N1 Level
+            </a>
+          </li>
         </ul>
       </div>
       <div class="box Other">
         <h2>Other</h2>
         <ul>
-          <li></li>
-        </ul>
-      </div>
-      <div class="Skill">
-        <!--radar chart-->
-        <div class="graph-container">
-          <div id="graph"></div>
-        </div>
-        <h2>Skills</h2>
-        <ul>
-          <li></li>
+          <li>Publication:
+            <ul>
+              <li>
+                <a
+                  href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=205401&item_no=1&page_id=13&block_id=8">
+                  Path Finding of Autonomous Wheel Robot by Reinforcement Learning
+                </a>
+              </li>
+              <li>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9291969">
+                  Policy Transfer from Simulation to Real World for Autonomous Control of an Omni Wheel Robot
+                </a>
+              </li>
+              <li>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9621943">
+                  Omnidirectional Mobile Robot Path Finding Using Deep Deterministic Policy Gradient for Real Robot
+                  Control
+                </a>
+              </li>
+              <li>
+                <a href="https://link.springer.com/article/10.1007/s10015-021-00713-y">
+                  Using sim-to-real transfer learning to close gaps between simulation and real environments through
+                  reinforcement learning
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="footer">
@@ -61,5 +140,7 @@
         </footer>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

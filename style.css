@@ -1,8 +1,10 @@
 
 body {
-    background-color: #f7e2e2;
-    padding: 0;
-    margin: 0;
+    background-color: #F0F0F0;
+}
+
+h1 {
+    color: black;
 }
 
 ul {
@@ -12,23 +14,28 @@ ul {
 
 .main {
     display: grid;
-    grid: 25vw repeat(5, 1fr) / 25vw 3fr;
+    grid: 5cm 1fr / 5cm 1fr;
     width: 100%;
+    font-size: 1vw;
+    margin-top: 10px;
 }
 
 .box {
-    border-radius: 20px;
     margin: 0px;
     padding: 0 20px;
 }
 
-.head {
+.resume-head {
     grid-area: 1/1/2/-1;
     display: flex;
 }
 
+.resume-body{
+    grid-area: 2/1/-1/-1;
+}
+
 #photo {
-    flex-basis: 25%;
+    flex-basis: 5cm;
     flex-grow: 0;
     flex-shrink: 0;
     display: flex;
@@ -37,68 +44,74 @@ ul {
 }
 
 #photo_1{
-    width: 22vw;
-    height: 22vw;
-    border-radius: 11vw;
+    width: 4.6cm;
+    height: 4.6cm;
+    border-radius: 2.3cm;
     background-color: grey;
 }
 
-#summary {
+.summary-container {
+    display: flex;
+    flex-wrap: wrap;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
     padding: 0 20px;
 }
 
+.italic {
+    font-style: italic;
+}
+
+#summary {
+    font-size: 1.7em;
+}
+
+.Personal {
+    font-size: 1.7em;
+}
+
 .Education {
-    grid-area: 2/2/3/-1;
+    font-size: 1.7em;
 }
 
 .Work {
-    grid-area: 3/2/4/-1;
+    font-size: 1.7em;
 }
 
 .Certification {
-    grid-area: 4/2/5/-1;
+    font-size: 1.7em;
 }
 
 .Other {
-    grid-area: 5/2/6/-1;
+    font-size: 1.7em;
 }
 
 .Skill {
-    grid-area: 2/1/-2/2;
-    background-color: aqua;
-    border-radius: 12.5vw 12.5vw 10px 10px;
+    font-size: 1.7em;
 }
 
 .footer {
-    grid-area: -2/1/-1/-1;
-}
-
-.head {
-    grid-area: 1/1/2/-1;
-}
-
-h1 {
-    color: black;
+    font-size: 1em;
 }
 
 /*radar char*/
 .graph-container {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     margin: 0;
     padding: 0;
-    object-fit: fill;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #graph {
-    width: 22vw;
-    height: 22vw;
-    border-radius: 11vw;
+    width: 100%;
+    height: 100%;
+    border-radius: 50vw;
     background-color: black;
 }
